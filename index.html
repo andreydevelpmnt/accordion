@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<!-- accordion -->
+	<button class="accord">section 1</button>
+	<div class="panel">
+		<p>askldfjasjdfaslkdjlasjdlaskjdklasjdklasd</p>
+	</div>
+	<button class="accord">section 2</button>
+	<div class="panel">
+		<p>askldfjasjdfaslkdjlasjdlaskjdklasjdklasd</p>
+	</div>
+	<button class="accord">section 2</button>
+	<div class="panel">
+		<p>askldfjasjdfaslkdjlasjdlaskjdklasjdklasd</p>
+	</div>
+	
+<script>
+	var ac = document.getElementsByClassName('accord');
+	var i;
+
+	for (i = 0; i < ac.length; i++) {
+			ac[i].onclick = function () {
+				this.classList.toggle("active");
+
+				this.nextElementSibling.classList.toggle("show")
+			}
+	}
+
+</script>
+
+
+</body>
+</html>

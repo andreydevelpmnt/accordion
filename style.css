@@ -1,0 +1,25 @@
+button.accord {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 16px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+}
+button.accord.active:hover,
+button.accord:hover {
+	background-color: #ddd;
+}
+button.accord.active {
+	display: block;
+}
+
+.panel {
+	display: none;
+	background-color: white;
+	padding: 0 16px;
+}.show {
+	display: block;
+}
